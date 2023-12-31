@@ -5,14 +5,14 @@ def index(request):
     context = {
         "ViewVar" : "This is a sample text from views.py"
     }
-    return render(request, 'index.html', context)
+    return render(request, 'index.html')
     # return HttpResponse("This is home page")
 
 def about(request):
-    return HttpResponse("This is about page")
+    return render(request, 'about.html')
 
 def services(request):
-    return HttpResponse("This is services page")
+    return render(request, 'services.html')
 
 def contact(request):
-    return HttpResponse("This is contact page")
+    return render(request, 'contact.html')
