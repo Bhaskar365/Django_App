@@ -13,22 +13,22 @@
         {% csrf_token %}
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter name">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
         </div>
 
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter email">
         </div>
 
         <div class="mb-3">
             <label for="phone" class="form-label">Phone Number</label>
-            <input type="phone" class="form-control" id="phone" placeholder="Enter phone">
+            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter phone">
         </div>
 
         <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter something..."></textarea>
+            <label for="desc" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="desc" rows="3" placeholder="Enter something..."></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
